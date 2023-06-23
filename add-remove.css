@@ -1,0 +1,54 @@
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.user-info-background {
+  padding: 2rem 4rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+}
+
+input {
+  margin-top: 2rem;
+  height: 3rem;
+  width: 15;
+}
+
+.user-form label {
+  font-size: 2rem;
+}
+
+.form-send {
+  text-align: center;
+  align-items: center;
+}
+
+#form-send {
+  font-size: 2rem;
+  padding: 0 3rem;
+  background-color: #011f4b;
+  color: #dde4ee;
+  transition: 0.3s all;
+}
+
+#form-send:hover,
+.btn:hover {
+  cursor: pointer;
+  background-color: #0d3b80;
+}
+
+.btn-div {
+  margin-top: 2rem;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  background-color: #011f4b;
+  color: #dde4ee;
+  transition: 0.3s all;
+}

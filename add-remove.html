@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add-Remove Person</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="add-remove.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-heading">
+            <a href="index.html"
+              ><h1 class="nav-main-heading">People Appender</h1></a
+            >
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="add-remove.html">Add-Remove Person</a></li>
+              <li><a href="people-list.html">See People List</a></li>
+              <li><a href="see-chats.html">See Charts</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="main-section container">
+      <div class="user-info">
+        <div class="user-info-background">
+          <h2 class="user-heading">User Information:</h2>
+          <form
+            id="myForm"
+            class="user-form"
+            action="form_create.php"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br /><br />
+
+            <label for="surname">Surname:</label>
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              required
+            /><br /><br />
+
+            <label for="date-of-birth">Date of birth:</label>
+            <input
+              type="date"
+              id="date-of-birth"
+              name="date-of-birth"
+              required
+            /><br /><br />
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required /><br /><br />
+
+            <label for="image-form">Image:</label>
+            <input
+              type="file"
+              id="image-form"
+              name="image-form"
+              accept="image/*"
+            /><br /><br />
+
+            <div class="form-send">
+              <input id="form-send" type="submit" value="send" />
+            </div>
+          </form>
+
+          <div class="btn-div form-send">
+            <button class="btn">Remove All</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="add-remove-script.js"></script>
+  </body>
+</html>
